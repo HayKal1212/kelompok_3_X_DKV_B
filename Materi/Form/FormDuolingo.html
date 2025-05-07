@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .login-container {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .logo {
+        text-align: center;
+        margin-bottom: 5px;
+      }
+      .logo img {
+        width: 100px;
+        height: auto;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      input {
+        margin: 5px 0;
+        padding: 8px;
+        width: 200px;
+      }
+      button {
+        padding: 8px 15px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img
+        src="https://www.smkibgbogor.sch.id/media_library/images/e0f0f006cf07a10c10c77a55552fc21a.png"
+        alt="Logo"
+      />
+    </div>
+    <div class="login-container">
+      <h2>Welcome To CBT!</h2>
+      <form action="submit-login.php" method="POST">
+        <input type="text" name="username" placeholder="Username" required />
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
